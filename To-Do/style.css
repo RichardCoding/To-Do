@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+body {
+  background: #B0BEC5;
+}
+
+header {
+  width: 375px;
+  height: 80px;
+  background: #64FFDA;
+  border-radius: 10px 10px 10px 10px;
+}
+
+header  input {
+  width: 280px;
+  height: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 40px;
+  margin-top: 19px; /* Posizione del capo di testo in altezza */
+  margin-left: 10px;
+  border-radius: 10px 30px 30px 10px;
+  border: 1px solid;
+  border-color: #64FFDA;
+  background: #A7FFEB;
+  outline: none;
+}
+
+header button {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  top: -43px;
+  left: 300px;
+  background: #ECEFF1;
+  border: 1px solid;
+  border-color: #ECEFF1;
+  border-radius: 30px 30px 30px 30px;
+  outline: none;
+}
+
+header img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: -49px;
+  left: 265px;
+}
+
+ul li {
+  width: 340px;
+  height: 40px;
+  background: #fff;
+  list-style: none;
+  font-size: 20px;
+  padding-top: 13px;
+  padding-left: 15px;
+  margin-left: -30px;
+  margin-bottom: 10px; /* Spaziatura tra le varie attività */
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px 10px 10px 10px;
+
+}
