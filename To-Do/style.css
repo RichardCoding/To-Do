@@ -37,6 +37,7 @@ header button {
   border: 1px solid;
   border-color: #ECEFF1;
   border-radius: 30px 30px 30px 30px;
+  cursor: pointer;
   outline: none;
 }
 
@@ -46,6 +47,7 @@ header img {
   height: 20px;
   top: -49px;
   left: 265px;
+  cursor: pointer;
 }
 
 ul li {
