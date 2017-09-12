@@ -1,46 +1,33 @@
-var testo;
-var array = [];
+var testo; // Valore input
+var array = []; // Array todo
 
 function tastoPremuto() {
-  testo = document.getElementById('oggetto').value // testo corrisponde a ciò che è nell'input
-  if (testo != "") { // Se c'è del testo nel campo di input
   // Variabili necessarie per eseguire il resto del codice
-  var ul = document.getElementById('lista');
-  var li = document.createElement('li');
-  var lis = document.getElementsByTagName('li');
-  if (array.length >= 1) {
-    // tastoElimina();
-    for (var j = 0; j < array.length; j++) {
-      if (lis.length > 1) {
-        ul.removeChild(ul.childNodes[j]);
-      }
-    }
-  }
+  testo = document.getElementById('oggetto').value // testo corrisponde a ciò che è nell'input
+  var ul = document.getElementById('lista'); //  La lista
+  var lis = ul.getElementsByTagName('li').length; // Numero elementi presenti
 
-  // Aggiungo l'elemento nell'array
+  if (testo != "") { // Se c'è del testo nel campo di input
+
   array.unshift(testo);
-  console.log(array);
-  if (array.length > 0) {
-    for (var i = 0; i < array.length; i++)
-    ul.appendChild(li);
-    li.appendChild(document.createTextNode(array[i]));
+  if (lis > 0) { // Se ci sono attivita le rimuove
+    ul.innerHTML = "";
+  }
+  for (var i = 0; i < array.length; i++) {
+    // Nuovo elemento
+    var li = document.createElement('li');
+
+    // Setta gli attributi
     li.setAttribute('id','elementi');
+
+    // Setta il valore
+    li.appendChild(document.createTextNode(array[i]));
+
+    // Lo aggiunge alla lista
+    ul.appendChild(li);
+
+    // Pulisce l'input
+    document.getElementById('oggetto').value = "";
   }
 }
-
-
-document.getElementById('oggetto').value = ""; // Rende vuoto il campo imput
 }
-//}
-
-// function tastoElimina() {
-//   var ul = document.getElementById('lista');
-//   var li = document.getElementById('elementi');
-//   var lis = document.getElementsByTagName('li');
-//   for (var j = 0; j < array.length; j++) {
-//     if (lis.length > 1) {
-//       ul.removeChild(ul.childNodes[j]);
-//     }
-//   }
-// }
-// ul.removeChild(li);
