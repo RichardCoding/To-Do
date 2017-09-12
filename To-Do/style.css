@@ -50,17 +50,51 @@ header img {
   cursor: pointer;
 }
 
+.container {
+  padding-right: 770px;
+}
+
 ul li {
-  width: 340px;
-  height: 40px;
+  width: 300px;
+  height: 30px;
   background: #fff;
   list-style: none;
-  font-size: 20px;
-  padding-top: 13px;
+  font-size: 16px;
+  padding-bottom: 10px;
+  padding-top: 11px;
+  padding-right: 40px;
   padding-left: 15px;
-  margin-left: -30px;
+  margin-left: -31px;
   margin-bottom: 10px; /* Spaziatura tra le varie attività */
   font-family: 'Roboto', sans-serif;
   border-radius: 10px 10px 10px 10px;
+}
+
+/* Pulsante completato */
+
+ul li button.fatto {
+  position: relative;
+  width: 51px;
+  height: 51px;
+  top: -11px;
+  right: -40px;
+  z-index: 1;
+  background: none;
+  border: 1px solid;
+  border-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  float: right;
+}
+
+ul li img.img_fatto {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  float: right;
+  right: -80px;
+  z-index: 0;
 
 }
