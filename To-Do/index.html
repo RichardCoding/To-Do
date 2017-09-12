@@ -5,13 +5,22 @@
       <link rel="stylesheet" type="text/css" href="style.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <script src="main.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <header>
       <input type="text" id="oggetto" placeholder="Inserisci un'attività qui..">
       <button class="aggiungi" onclick="tastoPremuto()"></button>
       <img src="https://image.ibb.co/g0o6da/20.png" alt="20" border="0" class="immagine_piu" onclick="tastoPremuto()">
     </header>
+ <div class="container">
+
+
     <ul id="lista">
-      <li>Questa è un'attivita..</li>
+      <li>Completa me per primo 😜<button onclick="fatto()" class="fatto"></button><img src="https://image.ibb.co/edzRwv/fatto.png" class="img_fatto" onclick="fatto()" alt="fatto" border="0"></li>
+
+      <!-- Bug: se non c'è nessun elemento nell'html come questo non funziona dopo -->
+
     </ul>
+  </div>
 </html>
+
