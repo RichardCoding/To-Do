@@ -5,14 +5,14 @@ body {
 }
 
 header {
-  width: 375px;
+  width: 1000px;
   height: 80px;
   background: #64FFDA;
   border-radius: 10px 10px 10px 10px;
 }
 
 header  input {
-  width: 280px;
+  width: 900px;
   height: 40px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -31,8 +31,9 @@ header button {
   position: relative;
   width: 42px;
   height: 42px;
+  float: right;
   top: -43px;
-  left: 300px;
+  right: 39px;
   background: #ECEFF1;
   border: 1px solid;
   border-color: #ECEFF1;
@@ -45,17 +46,14 @@ header img {
   position: relative;
   width: 20px;
   height: 20px;
-  top: -49px;
-  left: 265px;
+  float: right;
+  top: -31px;
+  right: 8px;
   cursor: pointer;
 }
 
-.container {
-  padding-right: 770px;
-}
-
 ul li {
-  width: 300px;
+  width: 920px;
   height: 30px;
   background: #fff;
   list-style: none;
